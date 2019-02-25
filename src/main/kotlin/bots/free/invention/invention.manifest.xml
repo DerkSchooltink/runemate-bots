@@ -14,6 +14,6 @@
         <resource>com/bots/free/invention/ui/invention_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>Pi Invention</internal-id>
+    <internal-id>REPLACE_THIS_WITH_YOUR_ID</internal-id>
     <tag-line>Gather your invention resources here!</tag-line>
 </manifest>

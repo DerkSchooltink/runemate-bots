@@ -10,7 +10,7 @@
     <categories>
         <category>COMBAT</category>
     </categories>
-    <internal-id>catacombsslayer</internal-id>
+    <internal-id>REPLACE_THIS_WITH_YOUR_ID</internal-id>
     <resources>
         <resource>com/bots/private_bots/catacombs/ui/catacombs_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>

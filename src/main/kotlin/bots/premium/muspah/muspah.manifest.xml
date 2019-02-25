@@ -13,7 +13,7 @@
         <resource>com/bots/premium/muspah/ui/muspah_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>muspah</internal-id>
+    <internal-id>REPLACE_THIS_WITH_YOUR_ID</internal-id>
     <tag-line>Kill, loot, bank, repeat.</tag-line>
     <hidden>true</hidden>
 </manifest>

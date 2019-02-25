@@ -8,6 +8,37 @@ Runemate is a platform that allows users to automate aspects of the game RuneSca
 
 Personally, writing these bots has helped me get into development, specifically Java and Kotlin. I have used open source bots before to learn how bots work. This is the reason behind this repository: completing the circle of learning.
 
+## Bots
+
+### RS3
+
+- Woodcutting
+- Slayer
+- Prifdinnas bonfire
+- Prifdinnas crystal prayer
+- Prifdinnas elves thieving
+- Prfidinnas harp crafting
+- Ascension killer
+- Hall of memories divination
+- Muspah killer
+- Clan citadel
+- Username grabber
+- Invention disassembler
+- Prifdinnas crystal mining
+- Sandstone miner
+- Portables bot
+- Runespan runecrafting
+- Summoning
+
+### OSRS
+
+- Tutorial island
+- Woodcutting
+- Kourend catacombs monster killer
+- Username grabber
+
+Some of these bots are not finished, and some have features that have not been fully tested yet. Use at your own discretion.
+
 ## Setup
 So obviously there are some aspects in the repository which has been censored to avoid people directly stealing this bot and uploading it. Manifest files containing internal ID's have been removed and I've had requests from people I used to work together with to remove some of the source code, mainly regarding the UI aspect. This is up to the user (you) to implement later on.
 

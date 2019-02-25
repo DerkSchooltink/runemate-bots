@@ -15,5 +15,5 @@
         <resource>com/quantum/api/ui/</resource>
     </resources>
     <hidden>true</hidden>
-    <internal-id>REPLACE_THIS_WITH_YOUR_ID</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
 </manifest>

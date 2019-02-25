@@ -16,6 +16,6 @@
         <resource>com/quantum/api/ui/</resource>
         <resource>com/quantum/api/ui/fxml/Root.fxml</resource>
     </resources>
-    <internal-id>REPLACE_THIS_WITH_YOUR_ID</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <tag-line>Woodcutting made easy!</tag-line>
 </manifest>

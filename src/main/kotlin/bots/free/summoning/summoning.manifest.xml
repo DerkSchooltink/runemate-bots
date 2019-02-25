@@ -14,6 +14,6 @@
         <resource>com/bots/free/summoning/ui/summoning_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>REPLACE_THIS_WITH_YOUR_ID</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <tag-line>Summon sum</tag-line>
 </manifest>

@@ -1,0 +1,19 @@
+<manifest>
+    <main-class>bots.premium.muspah.Muspah</main-class>
+    <name>Quantum Muspah</name>
+    <description>Kill em :trihard:</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>COMBAT</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/muspah/ui/muspah_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>muspah</internal-id>
+    <tag-line>Kill, loot, bank, repeat.</tag-line>
+    <hidden>true</hidden>
+</manifest>

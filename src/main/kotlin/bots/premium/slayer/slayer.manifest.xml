@@ -1,0 +1,20 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.premium.slayer.Slayer</main-class>
+    <name>Quantum Slayer</name>
+    <description>Does slayer stuff boii</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>SLAYER</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/slayer/ui/slayer_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>slayerbot</internal-id>
+    <tag-line>Kill, loot, bank, repeat.</tag-line>
+    <access>private</access>
+</manifest>

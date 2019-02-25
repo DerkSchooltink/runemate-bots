@@ -1,0 +1,22 @@
+<manifest>
+    <main-class>bots.free.runespan.Runespan</main-class>
+    <name>Quantum Runespan</name>
+    <tag-line>Star-mangled spanner</tag-line>
+    <description>Siphons nodes from RuneSpan!</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game>RS3</game>
+    </compatibility>
+    <categories>
+        <category>RUNECRAFTING</category>
+    </categories>
+    <internal-id>runespan</internal-id>
+    <tags>
+        <tag>runespan</tag>
+        <tag>quantum</tag>
+    </tags>
+    <resources>
+        <resource>com/bots/free/runespan/ui/runespan.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+</manifest>

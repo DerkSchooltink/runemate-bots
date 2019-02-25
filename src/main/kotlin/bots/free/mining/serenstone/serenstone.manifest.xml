@@ -1,0 +1,19 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.free.mining.serenstone.SerenStone</main-class>
+    <name>Quantum Seren Stone</name>
+    <description>Mines Seren stones in Prifddinas.</description>
+    <version>1.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>MINING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/mining/serenstone/ui/serenstone_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>serenstone</internal-id>
+    <tag-line>Don't get covered up...</tag-line>
+</manifest>

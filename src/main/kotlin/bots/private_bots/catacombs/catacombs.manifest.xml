@@ -1,0 +1,19 @@
+<manifest>
+    <main-class>bots.private_bots.catacombs.CatacombsSlayer</main-class>
+    <name>Quantum Catacombs</name>
+    <tag-line>Get those totem pieces!</tag-line>
+    <description>Farms different monsters in Kourend catacombs for totem pieces.</description>
+    <version>1.1.1</version>
+    <compatibility>
+        <game>OSRS</game>
+    </compatibility>
+    <categories>
+        <category>COMBAT</category>
+    </categories>
+    <internal-id>catacombsslayer</internal-id>
+    <resources>
+        <resource>com/bots/private_bots/catacombs/ui/catacombs_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <access>private</access>
+</manifest>

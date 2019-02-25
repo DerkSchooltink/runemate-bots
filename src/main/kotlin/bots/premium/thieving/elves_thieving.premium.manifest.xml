@@ -1,0 +1,20 @@
+<manifest>
+    <main-class>bots.premium.thieving.ElvesThieving</main-class>
+    <name>Quantum Elves Thieving</name>
+    <description>Thieves elves in Prifddinas and does idle tasks in between!</description>
+    <version>1.1.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>THIEVING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/thieving/ui/elves_thieving_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <price>0.07</price>
+    <hidden>true</hidden>
+    <internal-id>elvesthieving_premium</internal-id>
+    <tag-line>Dobby is a thieving elf!</tag-line>
+</manifest>

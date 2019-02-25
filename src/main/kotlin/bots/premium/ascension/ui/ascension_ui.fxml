@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_CENTER" type="StackPane"
+         xmlns="http://javafx.com/javafx/9.0.1">
+    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="445.0" prefWidth="600.0">
+        <GridPane prefHeight="452.0" prefWidth="600.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <CheckBox fx:id="useInventionCheckBox" mnemonicParsing="false" prefHeight="21.0" prefWidth="29.0"
+                      GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                <GridPane.margin>
+                    <Insets right="20.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip
+                            text="This enables invention. It will disassemble mithril, adamant and runite items dropped by rorarii."/>
+                </tooltip>
+            </CheckBox>
+            <Label text="Use invention:">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <Label text="Prayer potion:" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="prayerPotionComboBox" disable="true" prefWidth="150.0" GridPane.columnIndex="1"
+                      GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets right="25.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="You can pick what potion to use for prayer here."/>
+                </tooltip>
+            </ComboBox>
+            <ComboBox fx:id="presetComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT"
+                      GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets right="25.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="Pick your desired bank preset here."/>
+                </tooltip>
+            </ComboBox>
+            <Label text="Bankpreset:" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <Label text="Food:" GridPane.rowIndex="3">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <CheckBox fx:id="useFoodCheckBox" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="Enable using food."/>
+                </tooltip>
+            </CheckBox>
+            <ComboBox fx:id="foodComboBox" disable="true" prefWidth="150.0" GridPane.columnIndex="1"
+                      GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                <GridPane.margin>
+                    <Insets right="25.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="Pick your food type here."/>
+                </tooltip>
+            </ComboBox>
+            <CheckBox fx:id="usePrayerPotionCheckBox" mnemonicParsing="false" GridPane.columnIndex="1"
+                      GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="This will enable the usage of prayer."/>
+                </tooltip>
+            </CheckBox>
+            <Label text="Use magic notepaper:" GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <CheckBox fx:id="magicNotepaperCheckBox" mnemonicParsing="false" GridPane.columnIndex="1"
+                      GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets right="20.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="Enable to use magic notepaper to note your keys."/>
+                </tooltip>
+            </CheckBox>
+            <Label text="Use potion:" GridPane.rowIndex="5">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="potionComboBox" disable="true" prefWidth="150.0" GridPane.columnIndex="1"
+                      GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                <GridPane.margin>
+                    <Insets right="25.0"/>
+                </GridPane.margin>
+            </ComboBox>
+            <CheckBox fx:id="usePotionCheckBox" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </CheckBox>
+            <Label text="Use weapon poison:" GridPane.rowIndex="6">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </Label>
+            <CheckBox fx:id="useWeaponPoisonCheckBox" mnemonicParsing="false" GridPane.columnIndex="1"
+                      GridPane.rowIndex="6">
+                <GridPane.margin>
+                    <Insets left="25.0"/>
+                </GridPane.margin>
+            </CheckBox>
+            <ComboBox fx:id="weaponPoisonComboBox" disable="true" prefWidth="150.0" GridPane.columnIndex="1"
+                      GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                <GridPane.margin>
+                    <Insets right="25.0"/>
+                </GridPane.margin>
+            </ComboBox>
+            <Button fx:id="startButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Start"
+                    GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                    GridPane.valignment="CENTER"/>
+        </GridPane>
+    </VBox>
+</fx:root>

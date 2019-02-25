@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" prefHeight="173.0" prefWidth="541.0" type="StackPane"
+         xmlns="http://javafx.com/javafx/9.0.1">
+    <GridPane prefHeight="155.0" prefWidth="541.0">
+        <columnConstraints>
+            <ColumnConstraints/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" percentWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" percentWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" percentWidth="100.0"
+                               prefWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="82.0" minHeight="34.0" prefHeight="75.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="70.0" minHeight="23.0" percentHeight="33.0" prefHeight="59.0" vgrow="SOMETIMES"/>
+            <RowConstraints maxHeight="59.0" minHeight="0.0" percentHeight="33.0" prefHeight="29.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <Label text="Item to disassemble:" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+            <GridPane.margin>
+                <Insets right="10.0"/>
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="destroyField" alignment="CENTER_RIGHT" maxWidth="-Infinity" minWidth="-Infinity"
+                   prefHeight="25.0" prefWidth="159.0" GridPane.columnIndex="2" GridPane.columnSpan="2147483647"
+                   GridPane.halignment="LEFT">
+            <tooltip>
+                <Tooltip text="Put the full name of the item here, case-sensitive."/>
+            </tooltip>
+            <GridPane.margin>
+                <Insets left="10.0"/>
+            </GridPane.margin>
+            <padding>
+                <Insets right="10.0"/>
+            </padding>
+        </TextField>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="510.0"
+               text="Can utilize both your actionbar and the spellbook. Have either one of them open."
+               textAlignment="CENTER" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="3"
+               GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+        <Button fx:id="startButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Start"
+                GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER"/>
+        <CheckBox fx:id="everythingCheckBox" mnemonicParsing="false" text="Disassemble everything"
+                  GridPane.columnIndex="3"/>
+    </GridPane>
+</fx:root>

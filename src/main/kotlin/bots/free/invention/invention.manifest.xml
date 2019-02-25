@@ -1,0 +1,19 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.free.invention.InventionDisassemble</main-class>
+    <name>Quantum Invention</name>
+    <description>Desintegrates all items in your inventory down for invention resources.</description>
+    <version>1.1.4</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>INVENTION</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/invention/ui/invention_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>Pi Invention</internal-id>
+    <tag-line>Gather your invention resources here!</tag-line>
+</manifest>

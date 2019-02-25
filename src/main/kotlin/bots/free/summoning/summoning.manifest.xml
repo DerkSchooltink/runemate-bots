@@ -1,0 +1,19 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.free.summoning.Summoning</main-class>
+    <name>Quantum Summoning</name>
+    <description>Summons pouches in various locations.</description>
+    <version>1.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>SUMMONING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/summoning/ui/summoning_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>summoning</internal-id>
+    <tag-line>Summon sum</tag-line>
+</manifest>

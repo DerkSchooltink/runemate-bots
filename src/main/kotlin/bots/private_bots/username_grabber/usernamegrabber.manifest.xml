@@ -1,0 +1,19 @@
+<manifest>
+    <main-class>bots.private_bots.username_grabber.UsernameGrabber</main-class>
+    <name>Quantum Usernames</name>
+    <tag-line>Insert catchy tagline here (marketing oriented)</tag-line>
+    <description>Gathers usernames for ya!</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game>RS3</game>
+    </compatibility>
+    <categories>
+        <category>OTHER</category>
+    </categories>
+    <internal-id>usernamegrabber</internal-id>
+    <access>private</access>
+    <resources>
+        <resource>com/bots/private_bots/username_grabber/ui/usernamegrabber.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+</manifest>

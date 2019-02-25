@@ -1,0 +1,23 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.premium.woodcutting.WoodCutting</main-class>
+    <name>Quantum Woodcutting</name>
+    <description>An AIO woodcutter that does everything you can imagine.</description>
+    <version>1.3.8</version>
+    <compatibility>
+        <game-type>OSRS</game-type>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>WOODCUTTING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/woodcutting/ui/woodcutting_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+        <resource>com/quantum/api/ui/fxml/Root.fxml</resource>
+    </resources>
+    <price>0.05</price>
+    <hidden>true</hidden>
+    <internal-id>woodcutting_premium</internal-id>
+    <tag-line>Woodcutting made easy!</tag-line>
+</manifest>

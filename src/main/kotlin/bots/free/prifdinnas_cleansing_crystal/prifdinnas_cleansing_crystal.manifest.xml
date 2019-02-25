@@ -1,0 +1,19 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.free.prifdinnas_cleansing_crystal.PrifdinnasCleansingCrystal</main-class>
+    <name>Quantum Cleansing Crystal</name>
+    <description>Offers crystals for prayer experience, buys the crystals to continue forever.</description>
+    <version>1.0.2</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>PRAYER</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/prifdinnas_cleansing_crystal/ui/PrifdinnasCleansingCrystalUI.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>picleansingcrystal</internal-id>
+    <tag-line>Offer GP to the mighty god</tag-line>
+</manifest>

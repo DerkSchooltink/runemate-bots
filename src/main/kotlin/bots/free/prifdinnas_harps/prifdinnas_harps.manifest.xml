@@ -1,0 +1,20 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.free.prifdinnas_harps.PrifdinnasHarps</main-class>
+    <name>Quantum Harps</name>
+    <description>Uses the Prifdinnas harps to gain great crafting experience.</description>
+    <version>1.2.2</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>CRAFTING</category>
+        <category>CONSTRUCTION</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/prifdinnas_harps/ui/PrifdinnasHarpsUI.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>piharps</internal-id>
+    <tag-line>Play that funky harp-music</tag-line>
+</manifest>

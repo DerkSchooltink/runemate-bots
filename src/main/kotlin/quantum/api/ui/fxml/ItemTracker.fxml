@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+         minHeight="-Infinity"
+         prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #202020;"
+         type="StackPane" xmlns="http://javafx.com/javafx/8.0.60">
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <StackPane prefHeight="150.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+            <Label fx:id="itemNameLabel" text="Raw lobster" textFill="WHITE"
+                   StackPane.alignment="CENTER_LEFT">
+                <font>
+                    <Font name="Calibri Light" size="20.0"/>
+                </font>
+                <StackPane.margin>
+                    <Insets left="25.0"/>
+                </StackPane.margin>
+            </Label>
+        </StackPane>
+        <StackPane layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="150.0" prefWidth="170.0"
+                   HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets right="50.0"/>
+            </HBox.margin>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+                <StackPane prefHeight="150.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                    <Label text="Amount" textFill="#a1a1a1" StackPane.alignment="CENTER_LEFT">
+                        <font>
+                            <Font name="Calibri Light" size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemAmountLabel" text="100,000,000" textFill="WHITE"
+                           StackPane.alignment="CENTER_RIGHT">
+                        <font>
+                            <Font name="Calibri Light" size="18.0"/>
+                        </font>
+                    </Label>
+                </StackPane>
+                <StackPane layoutX="10.0" layoutY="92.0" prefHeight="150.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                    <Label text="Per hour" textFill="#a1a1a1" StackPane.alignment="CENTER_LEFT">
+                        <font>
+                            <Font name="Calibri Light" size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemHourlyAmountLabel" text="100,000,000" textFill="WHITE"
+                           StackPane.alignment="CENTER_RIGHT">
+                        <font>
+                            <Font name="Calibri Light" size="18.0"/>
+                        </font>
+                    </Label>
+                </StackPane>
+            </VBox>
+        </StackPane>
+        <StackPane layoutX="410.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="150.0" prefWidth="170.0"
+                   HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets right="25.0"/>
+            </HBox.margin>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                <StackPane prefHeight="150.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                    <Label text="Profit" textFill="#a1a1a1" StackPane.alignment="CENTER_LEFT">
+                        <font>
+                            <Font name="Calibri Light" size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemProfitLabel" text="123,456" textFill="WHITE"
+                           StackPane.alignment="CENTER_RIGHT">
+                        <font>
+                            <Font name="Calibri Light" size="18.0"/>
+                        </font>
+                        <StackPane.margin>
+                            <Insets/>
+                        </StackPane.margin>
+                    </Label>
+                </StackPane>
+                <StackPane layoutX="10.0" layoutY="92.0" prefHeight="150.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                    <Label text="Per hour" textFill="#a1a1a1" StackPane.alignment="CENTER_LEFT">
+                        <font>
+                            <Font name="Calibri Light" size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemHourlyProfitLabel" text="123,456" textFill="WHITE"
+                           StackPane.alignment="CENTER_RIGHT">
+                        <font>
+                            <Font name="Calibri Light" size="18.0"/>
+                        </font>
+                        <StackPane.margin>
+                            <Insets/>
+                        </StackPane.margin>
+                    </Label>
+                </StackPane>
+            </VBox>
+        </StackPane>
+    </HBox>
+</fx:root>

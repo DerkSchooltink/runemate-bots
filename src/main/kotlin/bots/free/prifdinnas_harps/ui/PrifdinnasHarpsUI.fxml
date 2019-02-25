@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" prefHeight="327.0" prefWidth="742.0" type="StackPane"
+         xmlns="http://javafx.com/javafx/8.0.60">
+    <VBox prefHeight="353.0" prefWidth="742.0">
+        <HBox>
+            <GridPane prefHeight="90.0" prefWidth="711.0" HBox.hgrow="ALWAYS">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="233.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="231.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <Label prefHeight="21.0" prefWidth="270.0" text="Percentage offset to reclick harp:"/>
+                <ComboBox fx:id="offsetCombobox" prefWidth="125.0" GridPane.columnIndex="1"
+                          GridPane.halignment="RIGHT"/>
+            </GridPane>
+        </HBox>
+        <HBox>
+            <GridPane HBox.hgrow="ALWAYS">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="233.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <ComboBox fx:id="locationBox" prefHeight="31.0" prefWidth="125.0" GridPane.columnIndex="1"
+                          GridPane.halignment="RIGHT" GridPane.valignment="CENTER"/>
+                <Label prefHeight="21.0" prefWidth="225.0" text="Location of the harp to use:"
+                       GridPane.halignment="LEFT" GridPane.valignment="CENTER"/>
+            </GridPane>
+        </HBox>
+        <HBox>
+            <GridPane prefHeight="91.0" prefWidth="661.0" HBox.hgrow="ALWAYS">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <Label text="Loot anagogic ort"/>
+                <CheckBox fx:id="anagogicOrtCheckBox" mnemonicParsing="false" GridPane.columnIndex="1"
+                          GridPane.halignment="RIGHT"/>
+            </GridPane>
+        </HBox>
+        <HBox>
+            <GridPane prefHeight="79.0" prefWidth="675.0" HBox.hgrow="ALWAYS">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <CheckBox fx:id="sleeperCheckbox" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0"
+                          GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+                <Label prefHeight="21.0" prefWidth="309.0" text="Use sleeping (less accurate on percentages)"/>
+            </GridPane>
+        </HBox>
+        <HBox>
+            <GridPane maxHeight="30.0" prefHeight="60.0" prefWidth="742.0" HBox.hgrow="ALWAYS">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <Button fx:id="startButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                        prefHeight="31.0" prefWidth="81.0" text="Start" textAlignment="CENTER"
+                        textOverrun="CENTER_ELLIPSIS" GridPane.halignment="CENTER"/>
+            </GridPane>
+        </HBox>
+    </VBox>
+</fx:root>

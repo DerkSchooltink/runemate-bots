@@ -1,0 +1,24 @@
+<manifest>
+    <main-class>bots.free.portables.Portables</main-class>
+    <name>Quantum Portables</name>
+    <description>Uses portables of your choice.</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>HERBLORE</category>
+        <category>COOKING</category>
+        <category>FLETCHING</category>
+        <category>FIREMAKING</category>
+        <category>SMITHING</category>
+        <category>MONEYMAKING</category>
+        <category>CRAFTING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/portables/ui/portables_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>portables</internal-id>
+    <tag-line>Mettbrötchen</tag-line>
+</manifest>

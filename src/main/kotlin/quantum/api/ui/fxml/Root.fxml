@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" fx:id="parentPane" prefWidth="450.0" type="StackPane"
+         xmlns="http://javafx.com/javafx/9.0.1">
+    <StackPane maxHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #202020;"
+               StackPane.alignment="TOP_CENTER">
+        <Label fx:id="runtimeLabel" alignment="BOTTOM_CENTER" layoutX="350.0" layoutY="56.0" maxWidth="-Infinity"
+               prefHeight="20.0" prefWidth="150.0" text="01:51:33" textFill="#b5b5b5" StackPane.alignment="CENTER">
+            <font>
+                <Font name="Calibri Light" size="16.0"/>
+            </font>
+            <StackPane.margin>
+                <Insets bottom="45.0"/>
+            </StackPane.margin>
+        </Label>
+        <Label fx:id="debugLabel" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Information"
+               textFill="WHITE" StackPane.alignment="CENTER">
+            <font>
+                <Font name="Calibri" size="24.0"/>
+            </font>
+            <StackPane.margin>
+                <Insets/>
+            </StackPane.margin>
+        </Label>
+        <Label fx:id="statusLabel" alignment="CENTER" layoutX="590.0" layoutY="36.0" maxWidth="1.7976931348623157E308"
+               prefHeight="20.0" prefWidth="550.0" text="Turning camera towards banker" textAlignment="CENTER"
+               textFill="#b5b5b5" wrapText="true" StackPane.alignment="CENTER">
+            <font>
+                <Font name="Calibri Light" size="16.0"/>
+            </font>
+            <StackPane.margin>
+                <Insets top="45.0"/>
+            </StackPane.margin>
+        </Label>
+        <ImageView fx:id="menuImageView" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true"
+                   StackPane.alignment="CENTER_LEFT">
+            <StackPane.margin>
+                <Insets left="25.0"/>
+            </StackPane.margin>
+        </ImageView>
+    </StackPane>
+    <VBox StackPane.alignment="TOP_RIGHT">
+        <StackPane.margin>
+            <Insets top="105.0"/>
+        </StackPane.margin>
+        <StackPane prefHeight="100.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+            <StackPane fx:id="sidebarPane" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity"
+                       prefWidth="150.0" StackPane.alignment="TOP_LEFT">
+                <StackPane.margin>
+                    <Insets/>
+                </StackPane.margin>
+                <VBox prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+                    <StackPane.margin>
+                        <Insets/>
+                    </StackPane.margin>
+                    <StackPane fx:id="settingsMenu" maxHeight="-Infinity" prefHeight="50.0" prefWidth="200.0"
+                               style="-fx-background-color: #202020;" VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Settings" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                    <StackPane fx:id="skillsMenu" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="50.0"
+                               prefWidth="200.0" style="-fx-background-color: #202020;" VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Skills" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                    <StackPane fx:id="occultMenu" layoutX="10.0" layoutY="60.0" maxHeight="-Infinity" prefHeight="50.0"
+                               prefWidth="200.0" style="-fx-background-color: #202020;">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Occult" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                    <StackPane fx:id="itemsMenu" layoutX="10.0" layoutY="60.0" maxHeight="-Infinity" prefHeight="50.0"
+                               prefWidth="200.0" style="-fx-background-color: #202020;" VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Items" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                    <StackPane fx:id="aliasMenu" layoutX="10.0" layoutY="160.0" maxHeight="-Infinity" prefHeight="50.0"
+                               prefWidth="200.0" style="-fx-background-color: #202020;" VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Alias" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                    <StackPane fx:id="breaksMenu" disable="true" layoutX="10.0" layoutY="110.0" maxHeight="-Infinity"
+                               prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #202020;"
+                               VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Breaks" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                    <StackPane fx:id="debugMenu" disable="true" layoutX="10.0" layoutY="160.0" maxHeight="-Infinity"
+                               prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #202020;"
+                               VBox.vgrow="ALWAYS">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                            <Label prefWidth="110.0" text="Debug" textFill="#b5b5b5" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Calibri Light" size="18.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="10.0"/>
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                    </StackPane>
+                </VBox>
+            </StackPane>
+            <ScrollPane fx:id="mainScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="100.0" prefWidth="400.0"
+                        StackPane.alignment="TOP_RIGHT">
+                <StackPane.margin>
+                    <Insets/>
+                </StackPane.margin>
+                <StackPane prefHeight="100.0" prefWidth="400.0">
+                    <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="400.0" StackPane.alignment="TOP_CENTER">
+                        <StackPane fx:id="mainPane" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="400.0"
+                                   VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </StackPane>
+                    </VBox>
+                </StackPane>
+            </ScrollPane>
+        </StackPane>
+        <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="25.0" prefWidth="200.0" VBox.vgrow="NEVER">
+            <Separator maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0"
+                       prefWidth="400.0" StackPane.alignment="TOP_CENTER"/>
+        </StackPane>
+    </VBox>
+</fx:root>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+         minWidth="-Infinity" prefHeight="365.0" prefWidth="648.0" type="StackPane"
+         xmlns="http://javafx.com/javafx/9.0.1">
+    <VBox prefHeight="371.0" prefWidth="648.0">
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="293.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="292.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <VBox prefHeight="228.0" prefWidth="354.0">
+                <StackPane>
+                    <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Slayer" textAlignment="CENTER"
+                           textOverrun="CLIP">
+                        <font>
+                            <Font size="20.0"/>
+                        </font>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="41.0" prefWidth="354.0">
+                    <ComboBox fx:id="slayerMasterComboBox" prefWidth="150.0" StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </ComboBox>
+                    <Label text="Slayermaster:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="36.0" prefWidth="354.0">
+                    <Label text="Use NPC contact to get task:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                    <CheckBox fx:id="npcContactCheckBox" mnemonicParsing="false" StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </CheckBox>
+                </StackPane>
+                <StackPane prefHeight="49.0" prefWidth="325.0">
+                    <Label text="Add to skip items:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                    <ComboBox fx:id="skipComboBox" prefHeight="25.0" prefWidth="108.0" StackPane.alignment="CENTER">
+                        <StackPane.margin>
+                            <Insets left="15.0"/>
+                        </StackPane.margin>
+                    </ComboBox>
+                    <Button fx:id="addSkipButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Add"
+                            StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </Button>
+                </StackPane>
+                <StackPane prefHeight="66.0" prefWidth="354.0">
+                    <ListView fx:id="skipListView" prefHeight="66.0" prefWidth="131.0">
+                        <StackPane.margin>
+                            <Insets left="20.0" right="200.0"/>
+                        </StackPane.margin>
+                    </ListView>
+                    <Button fx:id="deleteSkipButton" mnemonicParsing="false" text="Delete selected"
+                            StackPane.alignment="BOTTOM_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </Button>
+                    <Button fx:id="importUnsupportedTasksButton" mnemonicParsing="false" text="Import unsupported tasks"
+                            StackPane.alignment="TOP_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </Button>
+                </StackPane>
+                <Separator prefHeight="6.0" prefWidth="354.0" valignment="BOTTOM"/>
+            </VBox>
+            <VBox prefHeight="195.0" prefWidth="354.0" GridPane.columnIndex="1">
+                <StackPane prefHeight="12.0" prefWidth="354.0">
+                    <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Looting" textAlignment="CENTER"
+                           textOverrun="CLIP">
+                        <font>
+                            <Font size="20.0"/>
+                        </font>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="49.0" prefWidth="354.0">
+                    <Label prefHeight="0.0" prefWidth="71.0" text="Items to loot:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                    <Button fx:id="addLootButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Add"
+                            StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </Button>
+                    <TextField fx:id="lootTextField" maxWidth="129.0" prefHeight="25.0" prefWidth="118.0"/>
+                </StackPane>
+                <StackPane prefHeight="65.0" prefWidth="354.0">
+                    <ListView fx:id="itemLootListView" prefHeight="200.0" prefWidth="200.0">
+                        <StackPane.margin>
+                            <Insets left="20.0" right="150.0"/>
+                        </StackPane.margin>
+                    </ListView>
+                    <Button fx:id="deleteLootItemButton" mnemonicParsing="false" text="Delete selected"
+                            StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </Button>
+                </StackPane>
+                <StackPane prefHeight="37.0" prefWidth="292.0">
+                    <CheckBox fx:id="lootStackablesCheckBox" mnemonicParsing="false" StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </CheckBox>
+                    <Label text="Loot stackables:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="50.0" prefWidth="323.0">
+                    <Label text="Use pre-made loot items:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                    <CheckBox fx:id="usePresetLootListCheckBox" mnemonicParsing="false"
+                              StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </CheckBox>
+                </StackPane>
+                <Separator prefWidth="200.0" valignment="BOTTOM"/>
+            </VBox>
+            <VBox prefHeight="75.0" prefWidth="354.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <StackPane>
+                    <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Antifire" textAlignment="CENTER"
+                           textOverrun="CLIP">
+                        <font>
+                            <Font size="20.0"/>
+                        </font>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="87.0" prefWidth="292.0">
+                    <Label text="Antifire potion:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                    <ComboBox fx:id="antifireComboBox" prefWidth="150.0" StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </ComboBox>
+                </StackPane>
+                <Separator prefWidth="200.0" valignment="BOTTOM"/>
+            </VBox>
+            <VBox prefHeight="98.0" prefWidth="354.0" GridPane.rowIndex="1">
+                <StackPane>
+                    <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Prayer" textAlignment="CENTER"
+                           textOverrun="CLIP">
+                        <font>
+                            <Font size="20.0"/>
+                        </font>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="28.0" prefWidth="354.0">
+                    <CheckBox fx:id="useQuickPrayerCheckBox" mnemonicParsing="false" StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </CheckBox>
+                    <Label text="Use quickprayer on tasks:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                </StackPane>
+                <StackPane prefHeight="37.0" prefWidth="354.0">
+                    <Label text="Prayer potion:" StackPane.alignment="CENTER_LEFT">
+                        <StackPane.margin>
+                            <Insets left="20.0"/>
+                        </StackPane.margin>
+                    </Label>
+                    <ComboBox fx:id="prayerPotionComboBox" prefWidth="150.0" StackPane.alignment="CENTER_RIGHT">
+                        <StackPane.margin>
+                            <Insets right="20.0"/>
+                        </StackPane.margin>
+                    </ComboBox>
+                </StackPane>
+                <Separator prefWidth="200.0" valignment="BOTTOM"/>
+            </VBox>
+            <VBox prefHeight="39.0" prefWidth="354.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Button fx:id="startButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Start"
+                    GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                    GridPane.valignment="CENTER"/>
+        </GridPane>
+    </VBox>
+</fx:root>

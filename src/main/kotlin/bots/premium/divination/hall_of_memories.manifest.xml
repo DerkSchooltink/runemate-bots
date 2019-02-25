@@ -1,0 +1,18 @@
+<manifest>
+    <main-class>bots.premium.divination.HallOfMemories</main-class>
+    <name>Quantum Hall of Memories Lite</name>
+    <description>Collects memories in the Hall of Memories</description>
+    <version>1.1.4</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>DIVINATION</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/divination/ui/hall_of_memories_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>hallofmemories</internal-id>
+    <tag-line>Str0nk divination experience!</tag-line>
+</manifest>

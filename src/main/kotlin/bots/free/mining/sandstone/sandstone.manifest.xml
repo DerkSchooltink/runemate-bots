@@ -1,0 +1,19 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<manifest>
+    <main-class>bots.free.mining.sandstone.Sandstone</main-class>
+    <name>Quantum Sandstone</name>
+    <description>Powermines sandstone in Menaphos for you!</description>
+    <version>1.2.1</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>MINING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/free/mining/sandstone/ui/sandstone_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <internal-id>sandstone</internal-id>
+    <tag-line>Sand in your pants.</tag-line>
+</manifest>

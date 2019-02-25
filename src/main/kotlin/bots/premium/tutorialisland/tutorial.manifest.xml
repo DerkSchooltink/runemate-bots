@@ -1,0 +1,19 @@
+<manifest>
+    <main-class>bots.premium.tutorialisland.TutorialIsland</main-class>
+    <name>Quantum Tutorial Island</name>
+    <tag-line>Surely does the tutorial island.</tag-line>
+    <description>Load up multiple accounts to do tutorial island.</description>
+    <version>1.0.0</version>
+    <compatibility>
+        <game>OSRS</game>
+    </compatibility>
+    <categories>
+        <category>OTHER</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/tutorialisland/ui/tutorial_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <hidden>true</hidden>
+    <internal-id>tutorialisland</internal-id>
+</manifest>

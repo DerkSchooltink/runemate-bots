@@ -1,0 +1,20 @@
+<manifest>
+    <main-class>bots.premium.ascension.Ascension</main-class>
+    <name>Quantum Rorarii</name>
+    <description>Kills rorarii for you, with plenty features packed in the bot!</description>
+    <version>1.1.4</version>
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+    <categories>
+        <category>COMBAT</category>
+        <category>MONEYMAKING</category>
+    </categories>
+    <resources>
+        <resource>com/bots/premium/ascension/ui/ascension_ui.fxml</resource>
+        <resource>com/quantum/api/ui/</resource>
+    </resources>
+    <!--<price>0.07</price>-->
+    <internal-id>ascension</internal-id>
+    <tag-line>Gimme some keys!</tag-line>
+</manifest>

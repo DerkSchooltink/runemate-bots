@@ -1,12 +1,6 @@
 package bots.premium.tutorialisland
 
 import bots.premium.tutorialisland.ui.TutorialIslandController
-import quantum.api.core.ExtendedTaskBot
-import quantum.api.game.PathBuilder
-import quantum.api.game.turnAndInteract
-import quantum.api.ui.extenders.UIExtender
-import quantum.api.ui.managers.BreakManager
-import quantum.api.ui.managers.ListenerManager
 import com.runemate.game.api.hybrid.local.Varp
 import com.runemate.game.api.hybrid.local.hud.interfaces.ChatDialog
 import com.runemate.game.api.hybrid.local.hud.interfaces.Interfaces
@@ -15,18 +9,20 @@ import com.runemate.game.api.hybrid.region.Npcs
 import com.runemate.game.api.hybrid.region.Players
 import com.runemate.game.api.script.Execution
 import javafx.beans.property.SimpleIntegerProperty
+import quantum.api.UIExtender
+import quantum.api.core.ExtendedTaskBot
+import quantum.api.game.PathBuilder
+import quantum.api.game.turnAndInteract
 
 class TutorialIsland : ExtendedTaskBot() {
 
     val controller = TutorialIslandController(this)
 
     private val interfaceStrings = arrayOf("Nothing interesting happens.", "I can't reach that!", "You retrieve a bar of bronze.")
-    private val listenerManager = ListenerManager()
-    private val breakManager = BreakManager()
 
     override fun onStart(vararg arguments: String?) {
         setLoopDelay(600, 1200)
-        embeddableUI = UIExtender(this, controller, "com/bots/premium/tutorialisland/ui/tutorial_ui.fxml", listenerManager, breakManager)
+        embeddableUI = UIExtender(this, controller, "com/bots/premium/tutorialisland/ui/tutorial_ui.fxml")
     }
 
     fun talkToInstructor(name: String, coordinate: Coordinate? = Players.getLocal()?.position): Boolean {

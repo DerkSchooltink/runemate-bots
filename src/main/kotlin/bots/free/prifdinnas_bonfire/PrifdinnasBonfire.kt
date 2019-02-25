@@ -5,24 +5,23 @@ import bots.free.prifdinnas_bonfire.task.LightLogs
 import bots.free.prifdinnas_bonfire.task.OpenBank
 import bots.free.prifdinnas_bonfire.task.WithdrawPreset
 import bots.free.prifdinnas_bonfire.ui.PrifdinnasBonfireUI
-import quantum.api.core.ExtendedTaskBot
-import quantum.api.ui.extenders.UIExtender
-import quantum.api.ui.managers.BreakManager
-import quantum.api.ui.managers.ListenerManager
 import com.runemate.game.api.hybrid.local.hud.interfaces.Chatbox
 import com.runemate.game.api.script.framework.listeners.ChatboxListener
 import com.runemate.game.api.script.framework.listeners.events.MessageEvent
+import quantum.api.UIExtender
+import quantum.api.core.ExtendedTaskBot
 
 class PrifdinnasBonfire : ExtendedTaskBot(), ChatboxListener {
-
-    val listenerManager = ListenerManager()
-    private val breakHandler = BreakManager()
 
     var preset: Int = 0
     var amountToWaitForLooting = 6
 
     override fun onStart(vararg args: String) {
-        embeddableUI = UIExtender(this, PrifdinnasBonfireUI(this), "com/bots/free/prifdinnas_bonfire/ui/prifdinnas_bonfire_ui.fxml", listenerManager, breakHandler)
+        embeddableUI = UIExtender(
+            this,
+            PrifdinnasBonfireUI(this),
+            "com/bots/free/prifdinnas_bonfire/ui/prifdinnas_bonfire_ui.fxml"
+        )
         setLoopDelay(1000, 1700)
     }
 

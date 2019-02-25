@@ -9,8 +9,6 @@ import bots.premium.woodcutting.task.elder.ChopElderTree
 import bots.premium.woodcutting.task.elder.TraverseToNewTree
 import bots.premium.woodcutting.task.firemaking.BurnLogs
 import com.google.gson.Gson
-import quantum.api.game.GameMode
-import quantum.api.game.GameMode.RS3
 import com.runemate.game.api.script.framework.task.Task
 import javafx.event.ActionEvent
 import javafx.event.EventHandler
@@ -21,6 +19,8 @@ import javafx.scene.control.CheckBox
 import javafx.scene.control.ComboBox
 import javafx.scene.control.Control
 import javafx.scene.layout.StackPane
+import quantum.api.game.GameMode
+import quantum.api.game.GameMode.RS3
 import java.net.URL
 import java.util.*
 
@@ -77,7 +77,6 @@ class WoodCuttingUI(private val bot: WoodCutting, private val gameMode: GameMode
     }
 
     private fun getTasks() = mutableListOf<Task>().apply {
-        add(BreakingTask())
         if (powerchoppingCheckBox.isSelected) {
             addAll(arrayListOf(Drop(), Destroy()))
             if (treeTypeComboBox.selectionModel.selectedItem === Tree.IVY) {

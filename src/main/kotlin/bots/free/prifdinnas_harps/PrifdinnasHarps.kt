@@ -1,9 +1,6 @@
 package bots.free.prifdinnas_harps
 
 import bots.free.prifdinnas_harps.ui.PrifdinnasHarpsUI
-import quantum.api.ui.extenders.UIExtender
-import quantum.api.ui.managers.BreakManager
-import quantum.api.ui.managers.ListenerManager
 import com.runemate.game.api.hybrid.GameEvents
 import com.runemate.game.api.hybrid.local.hud.interfaces.Chatbox
 import com.runemate.game.api.hybrid.location.Coordinate
@@ -14,11 +11,10 @@ import com.runemate.game.api.script.Execution
 import com.runemate.game.api.script.framework.LoopingBot
 import com.runemate.game.api.script.framework.listeners.ChatboxListener
 import com.runemate.game.api.script.framework.listeners.events.MessageEvent
+import quantum.api.UIExtender
 
 class PrifdinnasHarps : LoopingBot(), ChatboxListener {
 
-    private val listenerManager = ListenerManager()
-    private val breakHandler = BreakManager()
     private var messageReceived = false
 
     var isSleeper: Boolean? = false
@@ -27,7 +23,8 @@ class PrifdinnasHarps : LoopingBot(), ChatboxListener {
     var coordinate = Coordinate(1, 1, 1)
 
     override fun onStart(vararg args: String) {
-        embeddableUI = UIExtender(this, PrifdinnasHarpsUI(this), "com/bots/free/prifdinnas_harps/ui/PrifdinnasHarpsUI.fxml", listenerManager, breakHandler)
+        embeddableUI =
+            UIExtender(this, PrifdinnasHarpsUI(this), "com/bots/free/prifdinnas_harps/ui/PrifdinnasHarpsUI.fxml")
         //disabled item handler because of the golden rocks that people often hunt for
         GameEvents.Universal.UNEXPECTED_ITEM_HANDLER.disable()
         setLoopDelay(600, 1500)

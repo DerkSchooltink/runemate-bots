@@ -6,10 +6,11 @@ import com.runemate.game.api.script.framework.task.Task
 import com.runemate.game.api.script.framework.task.TaskBot
 import java.util.concurrent.Callable
 
+@Suppress("UNCHECKED_CAST")
 open class ExtendedTask<T : TaskBot>(
-        private val validate: Callable<Boolean>?,
-        private val execute: Runnable?,
-        vararg children: Task
+    private val validate: Callable<Boolean>?,
+    private val execute: Runnable?,
+    vararg children: Task
 ) : Task(*children) {
     val local by lazy { Players.getLocal() }
     val bot: T by lazy { Environment.getBot() as T }

@@ -2,23 +2,18 @@ package bots.premium.citadel
 
 import bots.premium.citadel.task.LootAnagogicOrt
 import bots.premium.citadel.ui.CitadelUI
-import quantum.api.core.ExtendedTaskBot
-import quantum.api.ui.extenders.UIExtender
-import quantum.api.ui.managers.BreakManager
-import quantum.api.ui.managers.ListenerManager
 import com.runemate.game.api.client.ClientUI
 import com.runemate.game.api.hybrid.local.hud.interfaces.Chatbox
 import com.runemate.game.api.script.framework.listeners.ChatboxListener
 import com.runemate.game.api.script.framework.listeners.events.MessageEvent
 import com.runemate.game.api.script.framework.task.Task
+import quantum.api.UIExtender
+import quantum.api.core.ExtendedTaskBot
 
 class Citadel : ExtendedTaskBot(), ChatboxListener {
 
-    private val listenerManager = ListenerManager()
-    private val breakHandler = BreakManager()
-
     init {
-        embeddableUI = UIExtender(this, CitadelUI(this), "com/bots/premium/citadel/ui/citadel_ui.fxml", listenerManager, breakHandler)
+        embeddableUI = UIExtender(this, CitadelUI(this), "com/bots/premium/citadel/ui/citadel_ui.fxml")
         eventDispatcher.addListener(this)
     }
 

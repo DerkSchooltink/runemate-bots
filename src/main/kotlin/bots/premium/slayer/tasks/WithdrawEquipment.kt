@@ -29,7 +29,6 @@ class WithdrawEquipment : ExtendedTask<Slayer>() {
                 logger.info("Opening bank...")
                 it.turnAndInteract("Bank")
             } else {
-                bot.listenerManager.freezeListener()
                 bot.slayerSettings.task?.requirements?.styleSlayer?.presetNumber?.let { preset ->
                     if (Bank.loadPreset(preset)) {
                         logger.info("Loading preset $it...")

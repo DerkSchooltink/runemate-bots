@@ -1,8 +1,8 @@
 package bots.premium.ascension.tasks
 
 import bots.premium.ascension.Ascension
-import quantum.api.core.ExtendedTask
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank
+import quantum.api.core.ExtendedTask
 
 class WithdrawPreset : ExtendedTask<Ascension>() {
 
@@ -10,7 +10,6 @@ class WithdrawPreset : ExtendedTask<Ascension>() {
 
     override fun execute() {
         logger.info("Withdrawing preset...")
-        bot.listenerManager.freezeListener()
         Bank.loadPreset(bot.ascensionSettings.preset, true)
     }
 }

@@ -1,8 +1,5 @@
-package quantum.api.ui.extenders
+package quantum.api
 
-import quantum.api.ui.controllers.RootController
-import quantum.api.ui.managers.BreakManager
-import quantum.api.ui.managers.ListenerManager
 import com.runemate.game.api.client.embeddable.EmbeddableUI
 import com.runemate.game.api.hybrid.util.Resources
 import com.runemate.game.api.script.framework.AbstractBot
@@ -15,24 +12,21 @@ import java.io.IOException
 
 class UIExtender<T : AbstractBot, K : Initializable>(
     val bot: T,
-    val controller: K,
-    val fxmlPath: String,
-    val listenerManager: ListenerManager,
-    val breakHandler: BreakManager
+    private val controller: K,
+    private val fxmlPath: String
 ) : EmbeddableUI {
 
-    private var botInterfaceProperty: ObjectProperty<Node>? = null
+    var botInterfaceProperty: ObjectProperty<Node>? = null
 
     override fun botInterfaceProperty(): ObjectProperty<out Node>? {
         if (botInterfaceProperty == null) {
             val loader = FXMLLoader()
-            val controller = RootController(bot, fxmlPath, controller, listenerManager, breakHandler)
 
             loader.setRoot(controller)
             loader.setController(controller)
 
             try {
-                val node: Node = loader.load(Resources.getAsStream("com/quantum/api/ui/fxml/Root.fxml"))
+                val node: Node = loader.load(Resources.getAsStream(fxmlPath))
                 botInterfaceProperty = SimpleObjectProperty<Node>(node)
                 fitToHeightProperty().set(true)
             } catch (e: IOException) {

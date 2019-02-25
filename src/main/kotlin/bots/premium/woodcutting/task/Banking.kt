@@ -1,11 +1,11 @@
 package bots.premium.woodcutting.task
 
 import bots.premium.woodcutting.WoodCutting
-import quantum.api.core.ExtendedTask
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank
 import com.runemate.game.api.hybrid.local.hud.interfaces.DepositBox
 import com.runemate.game.api.hybrid.local.hud.interfaces.Inventory
 import com.runemate.game.api.hybrid.local.hud.interfaces.Shop
+import quantum.api.core.ExtendedTask
 
 class Banking : ExtendedTask<WoodCutting>() {
 
@@ -17,7 +17,6 @@ class Banking : ExtendedTask<WoodCutting>() {
         if (Shop.isOpen()) {
             if (Shop.sell(bot.settings.tree.value.logs, 0)) logger.info("Selling items to shop...")
         } else {
-            bot.listenerManager.freezeListener()
             bot.settings.run {
                 if (DepositBox.isOpen()) {
                     if (!Inventory.containsAnyOf(axePattern, urnPattern, jujuPattern)) {

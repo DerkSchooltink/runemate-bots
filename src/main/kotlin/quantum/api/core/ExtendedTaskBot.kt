@@ -4,6 +4,7 @@ import com.runemate.game.api.script.framework.task.Task
 import com.runemate.game.api.script.framework.task.TaskBot
 import java.util.*
 
+@Suppress("UNCHECKED_CAST")
 open class ExtendedTaskBot : TaskBot(), Iterable<Task> {
 
     fun <T : Task> findTask(taskClass: Class<T>) = firstOrNull { taskClass.isInstance(it) }?.let { it as T }

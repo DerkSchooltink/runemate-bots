@@ -28,10 +28,7 @@ class WithdrawPreset : ExtendedTask<Portables>() {
                 if (!it.isVisible) Camera.concurrentlyTurnTo(it)
                 if (Bank.open(it)) Execution.delayUntil(Bank::isOpen, 600, 1200)
             }
-            else -> {
-                bot.listenerManager.freezeListener()
-                Bank.loadPreset(1)
-            }
+            else -> Bank.loadPreset(1)
         }
     }
 }

@@ -2,25 +2,22 @@ package bots.premium.divination
 
 import bots.premium.divination.settings.HallOfMemoriesSettings
 import bots.premium.divination.ui.HallOfMemoriesController
-import quantum.api.core.ExtendedTaskBot
-import quantum.api.core.monitor.UsageMonitor
-import quantum.api.ui.extenders.UIExtender
-import quantum.api.ui.managers.BreakManager
-import quantum.api.ui.managers.ListenerManager
 import com.runemate.game.api.client.ClientUI
 import com.runemate.game.api.script.framework.core.LoopingThread
+import quantum.api.UIExtender
+import quantum.api.core.ExtendedTaskBot
+import quantum.api.core.monitor.UsageMonitor
 import java.util.concurrent.TimeUnit
 
 class HallOfMemories : ExtendedTaskBot() {
 
-    val listenerManager = ListenerManager()
-    val breakHandler = BreakManager()
     val settings = HallOfMemoriesSettings()
 
     private lateinit var usageMonitor: UsageMonitor
 
     override fun onStart(vararg arguments: String?) {
-        embeddableUI = UIExtender(this, HallOfMemoriesController(this), "com/bots/premium/divination/ui/hall_of_memories_ui.fxml", listenerManager, breakHandler)
+        embeddableUI =
+            UIExtender(this, HallOfMemoriesController(this), "com/bots/premium/divination/ui/hall_of_memories_ui.fxml")
         usageMonitor = UsageMonitor(this, 1L, TimeUnit.HOURS)
 
         if (metaData.hourlyPrice.toDouble() == 0.0) {

@@ -13,6 +13,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    implementation(files("lib/RuneMate.jar"))
 }
 
 tasks.withType<KotlinCompile> {

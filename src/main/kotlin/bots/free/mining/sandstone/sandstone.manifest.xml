@@ -14,6 +14,6 @@
         <resource>com/bots/free/mining/sandstone/ui/sandstone_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>sandstone</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <tag-line>Sand in your pants.</tag-line>
 </manifest>

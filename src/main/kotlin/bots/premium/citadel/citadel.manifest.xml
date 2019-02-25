@@ -15,6 +15,6 @@
         <resource>com/quantum/api/ui/</resource>
     </resources>
     <!--<price>0.07</price>-->
-    <internal-id>celestialcitadel</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <tag-line>Helping out both your clan and your own levels!</tag-line>
 </manifest>

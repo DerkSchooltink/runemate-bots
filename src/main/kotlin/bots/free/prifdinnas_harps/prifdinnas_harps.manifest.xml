@@ -15,6 +15,6 @@
         <resource>com/bots/free/prifdinnas_harps/ui/PrifdinnasHarpsUI.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>piharps</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <tag-line>Play that funky harp-music</tag-line>
 </manifest>

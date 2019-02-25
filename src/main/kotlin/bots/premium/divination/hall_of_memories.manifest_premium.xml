@@ -13,7 +13,7 @@
         <resource>com/bots/premium/divination/ui/hall_of_memories_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>hallofmemories_premium</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <price>0.08</price>
     <tag-line>Str0nk divination experience!</tag-line>
 </manifest>

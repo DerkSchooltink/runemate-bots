@@ -14,7 +14,7 @@
         <resource>com/bots/premium/slayer/ui/slayer_ui.fxml</resource>
         <resource>com/quantum/api/ui/</resource>
     </resources>
-    <internal-id>slayerbot</internal-id>
+    <internal-id>REPLACE_THIS</internal-id>
     <tag-line>Kill, loot, bank, repeat.</tag-line>
     <access>private</access>
 </manifest>
